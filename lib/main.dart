@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../pag1/main.dart';
-import '../pag2/main.dart';
-import '../pag3/main.dart';
+import '../pag1/main.dart'; // Asegúrate de que este archivo y clase existan
+import '../pag2/main.dart'; // Completa este archivo y define PlatformAdaptingHomePage
+import '../pag3/main.dart'; // Asegúrate de que este archivo y clase existan
 
 void main() {
   runApp(const MyApp());
@@ -52,6 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const SizedBox(height: 20),
+            ////////////////////////////////////////
+            // Página 1: Simplistic Editor
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -61,11 +63,15 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: const Text('Ir a Simplistic Editor'),
             ),
+            ////////////////////////////////////////
+            // Página 2: Tabs (Recuerda llenar el archivo main.dart en pag2)
             ElevatedButton(
-              onPressed: () => _navigateToPage(context,
-                  PlatformAdaptingHomePage()), // Aquí cambia a la página Dices
-              child: const Text('Ir a tabs'),
+              onPressed: () =>
+                  _navigateToPage(context, PlatformAdaptingHomePage()),
+              child: const Text('Ir a Tabs'),
             ),
+            ////////////////////////////////////////
+            // Página 3: Material 3
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -73,8 +79,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   MaterialPageRoute(builder: (context) => const App()),
                 );
               },
-
-              //xd
               child: const Text('Ir a Material 3'),
             ),
           ],

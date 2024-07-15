@@ -6,7 +6,7 @@ import 'basic_text_field.dart';
 import 'formatting_toolbar.dart';
 import 'replacements.dart';
 import 'text_editing_delta_history_view.dart';
-
+//rich text editor
 void main() {
   runApp(const MyAppPag1());
 }
